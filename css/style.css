@@ -18,7 +18,7 @@ h4{
 }
 i{
     font-size: 1.5rem;
-    color: #fff;
+    color:black;
 }
 p,a{
     font-size: .9rem;
@@ -48,11 +48,11 @@ hr{
 }
 
 .sidebar:hover::-webkit-scrollbar-thumb {
-    background: #717171;
+    background: #d7d5d5;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #888;
+    background: #d8d4d4;
 
 }
 /* header section */
@@ -61,11 +61,11 @@ hr{
     /* top: 0px; */
     /* left: 0px; */
     width: 100%;
-    background-color: #121212; 
+    background-color: white; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0;
+    padding-top:10px;
     margin-right: 40px;
     
 
@@ -78,7 +78,7 @@ hr{
 #logo-txt{
     font-size: 26px;
     letter-spacing: 0%;
-    color: #3d07e2;
+    color: black;
 }
 .logo{
     display: flex;
@@ -99,6 +99,7 @@ hr{
 .search-container form{
     position: relative;
     width: 100%;
+    border-radius: 15px;
 
 }
 .search-container input{
@@ -106,10 +107,11 @@ hr{
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: #121212;
-    border: 1px solid rgba(255, 255, 255, .1);
+    background-color:white;
+    border: 1px solid rgba(44, 42, 42, 0.1);
+    border-radius: 15px;
     padding: 20px;
-    color: #fff;
+    color: black;
     font-size: 1rem;
 }
 .search{
@@ -119,12 +121,13 @@ hr{
     align-items: center;
     justify-content: center;
     z-index: 20;
-    background-color: #060606;
+    background-color: white;
     outline: none;
     border: none;
 }
 .ri-mic-fill{
     font-size: 1.5rem;
+    color: black;
 }
 .mic{
     height: 40px;
@@ -135,7 +138,7 @@ hr{
     margin-left: 10px;
     display: flex;
     justify-content: center;
-    background-color: #181818;
+    background-color: #eeecec;
 }
 .profile-container{
     display: flex;
@@ -155,24 +158,26 @@ hr{
     margin-left: 25px;
 
 }
-
+.logo-container i{
+    padding-left: 35px;
+}
 
 .sidebar{
-    background-color: #060606;
-    padding-top: 0%;
+    background-color: white;
+    padding-top: 10px;
     width: 240px;
     overflow-y: scroll;
     color: #fff;
 }
 .sidebar a{
     text-decoration: none;
-    color:#fff;
+    color:black;
 }
 .sidebar-items{
     display: flex;
     flex-direction: column;
-
 }
+
 .sidebar-item{
     display: flex;
     align-items: centre;
@@ -181,7 +186,7 @@ hr{
     height: 40px;
 }
 .sidebar-item:hover{
-     background-color: #4c4c4c;
+     background-color: #eeecec;
 }
 .sidebar-item i{
     margin-right: 24px;
@@ -192,7 +197,7 @@ hr{
 
 .chips-wrapper{
     overflow-x: scroll;
-    background-color: #181818;
+    background-color: white;
     display: flex;
     padding-left: 14px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -204,35 +209,42 @@ hr{
 }
 .chip{
     margin: 12px 6px;
-    background-color: #060606;
+    background-color: #eeecec;
     padding: 6px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(240, 237, 237, 0.818);
     border-radius: 16px;
     white-space: nowrap;
     cursor: pointer;
-    color: #fff;
+    color: black;
     transition: .5s;
 }
 
 .chip:hover{
-    background-color: #4d4d4d;
+    background-color: #eae4e4;
 
 }
 
-.card-type-1{
+.sect-body{
+    font-size:18px;
+    color:black;
+    text-transform: none;
+    font-weight: normal;
+}
+.card-type-1,.card-type-2{
     border: none;
+    padding:10px;
 }
-.card-type-1 .card-img-top{
+.card-type-1 .card-img-top, .card-type-2 .card-img-top{
     border-radius: 12px;
 }
-.card-type-1 .card-body{
+.card-type-1 .card-body,.card-type-2 .card-body{
     padding-left: 0;
     padding-right: 0;
 }
-.card-type-1 .card-body .card-title{
+.card-type-1 .card-body .card-title,.card-type-2 .card-body .card-title{
     font-size: 16px;
 }
-.card-type-1 .card-body .card-text{
+.card-type-1 .card-body .card-text,.card-type-2 .card-body .card-text{
     margin-bottom: 4px;
 }
 .card-type-1 .card-body .card-text span{}
