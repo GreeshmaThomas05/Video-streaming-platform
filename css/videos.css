@@ -31,31 +31,6 @@ hr{
 .more{
     font-size: 20px;
 }
-/* scrollbar */
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track{
-    background: none;
-}
-
-::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 5px;
-
-}
-
-.sidebar:hover::-webkit-scrollbar-thumb {
-    background: #d7d5d5;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #d8d4d4;
-
-}
-/* header section */
 .header{
     /* position: fixed; */
     /* top: 0px; */
@@ -148,40 +123,6 @@ hr{
     padding-left: 35px;
 }
 
-.sidebar{
-    background-color: white;
-    padding-top: 25px;
-    width: 240px;
-    overflow-y: scroll;
-    color: #fff;
-    text-align:justify;
-}
-.sidebar a{
-    text-decoration: none;
-    color:black;
-}
-.sidebar-items{
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-item{
-    display: flex;
-    align-items: centre;
-    padding: 0 24px;
-    cursor: pointer;
-    height: 40px;
-}
-.sidebar-item:hover{
-     background-color: #eeecec;
-}
-.sidebar-item i{
-    margin-right: 24px;
-
-}
-
-/* main content */
-
 .chips-wrapper{
     overflow-x: scroll;
     background-color: white;
@@ -211,11 +152,17 @@ hr{
 
 }
 
-.sect-body{
-    font-size:18px;
-    color:black;
-    text-transform: none;
-    font-weight: normal;
+.main-section{
+    padding-left:25px;
+    padding-right:25px;
+}
+.filter-section, .recommended-shorts{
+    padding-left:40px;
+    box-sizing: border-box;
+}
+.recommended-videos{
+    padding-left:20px;
+    box-sizing: border-box;
 }
 .card-type-1,.card-type-2{
     border: none;
@@ -234,4 +181,3 @@ hr{
 .card-type-1 .card-body .card-text,.card-type-2 .card-body .card-text{
     margin-bottom: 4px;
 }
-.card-type-1 .card-body .card-text span{}
