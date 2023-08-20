@@ -10,7 +10,7 @@ h1{
     font-size: 10rem;
 }
 h4{
-    font-size: .11rem;
+    font-size:11rem;
     text-transform: uppercase;
     color: #aaa;
     margin-left: 0px;
@@ -19,18 +19,28 @@ h4{
 i{
     font-size: 1.5rem;
     color:black;
+    text-decoration: none;
 }
 p,a{
     font-size: .9rem;
+    text-decoration: none;
 
 }
-hr{
-    border: 1px solid rgb(30, 29, 29);
+.sidebar hr{
+    color: rgb(30, 29, 29);
+    width: 220px;
     margin: 12px 0; 
 }
 .more{
     font-size: 20px;
 }
+.quick-links a{
+    padding-left: 5px;
+    padding-right: 10px;
+    color: rgb(130, 127, 127);
+    text-decoration: none;
+}
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -72,8 +82,15 @@ hr{
 .logo-container{
     display: flex;
 }
+.logo img{
+    width:120px;
+    height:28px;
+    padding-left: 10px;
+}
 .ri-menu-line{
     padding-top: 5px;
+    padding-left:35px;
+    
 }
 .search-container{
     display: flex;
@@ -116,8 +133,6 @@ hr{
     color: black;
 }
 .mic{
-    height: 40px;
-    min-width: 40px;
     border-radius: 50%;
     outline: none;
     border: none;
@@ -132,39 +147,24 @@ hr{
 
 }
 .profile-container i{
-    margin-left: 25px;
-
+    padding-right: 15px;
 }
 .profile-box{
-    position: relative;
     height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 25px;
-
+    width: 90px;
+    padding-left: 0;
 }
 
 .sidebar{
     background-color: white;
     padding-top: 25px;
     width: 240px;
-    overflow-y: scroll;
     color: #fff;
     text-align:justify;
-}
-.sidebar a{
-    text-decoration: none;
-    color:black;
-}
-.sidebar-items{
-    display: flex;
-    flex-direction: column;
 }
 
 .sidebar-item{
     display: flex;
-    align-items: centre;
     padding: 0 24px;
     cursor: pointer;
     height: 40px;
@@ -176,8 +176,16 @@ hr{
     margin-right: 24px;
 
 }
+.sidebar-item p{
+    padding-top:8px;
+    color:black;
+}
 
 /* main content */
+.content-section{
+    overflow-y: auto;
+    max-height: 1200px;
+}
 
 .chips-wrapper{
     overflow-x: scroll;
@@ -192,20 +200,27 @@ hr{
     height: 0;
 }
 .chip{
-    margin: 12px 6px;
+    margin: 10px 4px;
     background-color: #eeecec;
-    padding: 1px 12px;
+    padding: 1px 10px;
     border: 1px solid rgba(240, 237, 237, 0.818);
-    border-radius: 16px;
+    border-radius: 10px;
     white-space: nowrap;
     cursor: pointer;
     color: black;
     transition: .5s;
+    height:35px;
+}
+.chip p{
+    padding-top: 5px;
 }
 
 .chip:hover{
     background-color: #eae4e4;
 
+}
+.recommended-videos{
+    padding-top: 15px;
 }
 
 .sect-body{
@@ -213,6 +228,10 @@ hr{
     color:black;
     text-transform: none;
     font-weight: normal;
+}
+.shorts-icon{
+    width:20px;
+    height:22px;
 }
 .card-type-1,.card-type-2{
     border: none;
@@ -231,4 +250,13 @@ hr{
 .card-type-1 .card-body .card-text,.card-type-2 .card-body .card-text{
     margin-bottom: 4px;
 }
-.card-type-1 .card-body .card-text span{}
+.short{
+    margin-top: 25px;
+    margin-left:370px;
+}
+.buttons{
+    padding-top:250px;
+}
+.buttons p{
+    padding-left: 10px;
+}
